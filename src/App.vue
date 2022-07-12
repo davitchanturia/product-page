@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <responsive-menu></responsive-menu>
+  <nav-bar></nav-bar>
+  <section class="w-full">
+    <div class="w-full md:w-2/3 mx-auto lg:px-4 flex justify-center flex-col lg:flex-row lg:mt-14">
+      <grid-item></grid-item>
+      <info-item></info-item>
+    </div>
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue';
+import GridItem from './components/GridItem.vue';
+import InfoItem from './components/InfoItem.vue';
+import ResponsiveMenu from './components/ResponsiveMenu.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    GridItem,
+    InfoItem,
+    ResponsiveMenu
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
