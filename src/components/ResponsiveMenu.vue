@@ -20,7 +20,6 @@ export default {
     },
     computed: {
         isVisible() {
-            //blabla
             const showStatus = this.$store.getters['menu/show'];
             const classes = "absolute top-0 -left-full duration-700 w-full h-full bg-orange-500 z-10";
 
